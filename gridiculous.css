@@ -1,7 +1,7 @@
 /*
  * Gridiculous
  *
- * A fully responsive grid boilerplate that takes you all the way from 1280px on down to 320px.
+ * A responsive grid boilerplate that takes you all the way from 1280px on down to 320px.
  *
  * created by c.bavota
  * released under GPL v2
@@ -103,13 +103,12 @@ img {
 	}
 	
 	.row .row {
-		background: #fff;
 		margin-bottom: 0;
 		}
-	
-	.row > div:last-child {
-		margin-right: 0 !important;
-		}
+
+.end {
+	margin-right: 0 !important;
+	}
 		
 .c1 { width: 4.85%; }
 .c2 { width: 13.5%; }
