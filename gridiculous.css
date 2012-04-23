@@ -81,6 +81,7 @@ img {
 
 .wfull {
 	width: 100%;
+	max-width: 100%;
 	}
  
 .w320 {
