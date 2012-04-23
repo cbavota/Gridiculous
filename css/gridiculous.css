@@ -1,0 +1,186 @@
+/*
+ * Gridiculous
+ *
+ * A responsive grid boilerplate that takes you all the way from 1280px on down to 320px.
+ *
+ * created by c.bavota
+ * released under GPL v2
+ *
+ * April 23rd, 2012
+ */
+ 
+/* =Normalize.css by Nicolas Gallagher - http://necolas.github.com/normalize.css/
+-------------------------------------------------------------- */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;height:0;}
+[hidden]{display:none;}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+html,button,input,select,textarea{font-family:sans-serif;}
+body{margin:0;}
+a:focus{outline:thin dotted;}
+a:hover,a:active{outline:0;}
+h1{font-size:2em;margin:0.67em 0;}
+h2{font-size:1.5em;margin:0.83em 0;}
+h3{font-size:1.17em;margin:1em 0;}
+h4{font-size:1em;margin:1.33em 0;}
+h5{font-size:0.83em;margin:1.67em 0;}
+h6{font-size:0.75em;margin:2.33em 0;}
+abbr[title]{border-bottom:1px dotted;}
+b,strong{font-weight:bold;}
+blockquote{margin:1em 40px;}
+dfn{font-style:italic;}
+mark{background:#ff0;color:#000;}
+p,pre{margin:1em 0;}
+pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em;}
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+q{quotes:none;}
+q:before,q:after{content:'';content:none;}
+small{font-size:75%;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+dl,menu,ol,ul{margin:1em 0;}
+dd{margin:0 0 0 40px;}
+menu,ol,ul{padding:0 0 0 40px;}
+nav ul,nav ol{list-style:none;list-style-image:none;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+svg:not(:root){overflow:hidden;}
+figure{margin:0;}
+form{margin:0;}
+fieldset{border:1px solid#c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}
+legend{border:0;padding:0;white-space:normal;*margin-left:-7px;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+button,input{line-height:normal;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible;}
+button[disabled],input[disabled]{cursor:default;}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px;}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+textarea{overflow:auto;vertical-align:top;}
+table{border-collapse:collapse;border-spacing:0;} 
+
+/* =Gridiculous v1.0
+-------------------------------------------------------------- */
+.grid {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	max-width: 1240px;
+	}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.wfull {
+	width: 100%;
+	max-width: 100%;
+	}
+ 
+.w320 {
+	max-width: 280px;
+	}
+
+.w640 {
+	max-width: 600px;
+	}
+
+.w960 {
+ 	max-width: 920px;
+ 	}
+ 
+.row {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	}
+	
+	.row .row {
+		margin-bottom: 0;
+		}
+
+.end {
+	margin-right: 0 !important;
+	}
+		
+.c1 { width: 4.85%; }
+.c2 { width: 13.5%; }
+.c3 { width: 22.1%; }
+.c4 { width: 30.75%; }
+.c5 { width: 39.45%; }
+.c6 { width: 48%; }
+.c7 { width: 56.75%; }
+.c8 { width: 65.4%; }
+.c9 { width: 74.05%; }
+.c10 { width: 82.7%; }
+.c11 { width: 91.35%; }
+.c12 { width: 100%;	float: left; }
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11 {
+	min-height: 1px;
+	float: left;
+	margin-right: 3.8%;
+	}
+
+.row .row .c1 { width: 2.85%; }
+.row .row .c2 { width: 11.5%; }
+.row .row .c3 { width: 20.1%; }
+.row .row .c4 { width: 28.75%; }
+.row .row .c5 { width: 37.45%; }
+.row .row .c6 { width: 46%; }
+.row .row .c7 { width: 54.75%; }
+.row .row .c8 { width: 63.4%; }
+.row .row .c9 { width: 72.05%; }
+.row .row .c10 { width: 80.7%; }
+.row .row .c11 { width: 89.35%; }
+.row .row .c1, .row .row .c2, .row .row .c3, .row .row .c4, .row .row .c5, .row .row .c6, .row .row .c7, .row .row .c8, .row .row .c9, .row .row .c10, .row .row .c11, .row .row .c12 {
+	margin-right: 7.8%;
+	}
+	
+.s1 { margin-left: 8.65%; }
+.s2 { margin-left: 17.3%; }
+.s3 { margin-left: 25.9%; }
+.s4 { margin-left: 34.55%; }
+.s5 { margin-left: 43.25%; }
+.s6 { margin-left: 51.8%; }
+.s7 { margin-left: 60.55%; }
+.s8 { margin-left: 69.2%; }
+.s9 { margin-left: 77.85%; }
+.s10 { margin-left: 86.5%; }
+.s11 { margin-left: 95.15%; }
+
+/* =Media query for 960 Screens
+-------------------------------------------------------------- */
+@media only screen and (max-width: 920px) {
+
+	.row .row .c1, .row .row .c2, .row .row .c3, .row .row .c4, .row .row .c5, .row .row .c6, .row .row .c7, .row .row .c8, .row .row .c9, .row .row .c10, .row .row .c11, .row .row .c12 {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 20px;
+		}		
+
+}
+
+/* =Media query for iPad and tablets
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait){
+
+	.row,
+	.row .row > div:last-child{
+		margin-bottom: 0;
+		}
+	
+	.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 20px;
+		}
+
+}
