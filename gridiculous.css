@@ -63,6 +63,11 @@ table{border-collapse:collapse;border-spacing:0;}
 
 /* =Gridiculous v1.0
 -------------------------------------------------------------- */
+body {	
+	font-size: 100%;
+ 	line-height: 1.6875;
+ 	}
+
 .grid {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -170,6 +175,8 @@ img {
 /* =Media query for iPad and tablets
 -------------------------------------------------------------- */
 @media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait){
+
+	body { font-size: 90%; }
 
 	.row,
 	.row .row > div:last-child{
