@@ -6,7 +6,7 @@ A fully responsive grid boilerplate that takes you all the way from 1280px on do
 created by c.bavota
 released under GPL v2
 
-April 23rd, 2012
+April 24th, 2012
 
 Known issues
  - not fully tested in IE7 & IE8
