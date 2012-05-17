@@ -1,12 +1,12 @@
 /*
  * Gridiculous
  *
- * A responsive grid boilerplate that takes you all the way from 1280px on down to 320px.
+ * A responsive grid boilerplate that takes you all the way from 1200px on down to 320px.
  *
  * created by c.bavota
  * released under GPL v2
  *
- * April 24th, 2012
+ * May 17th, 2012
  */
  
 /* =Normalize.css by Nicolas Gallagher - http://necolas.github.com/normalize.css/
@@ -61,18 +61,30 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
 textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0;} 
 
+/* =Clearfix by Nicolas Gallagher
+-------------------------------------------------------------- */
+.row:before,.row:after,.clearfix:before,.clearfix:after{content:'';display:table;}
+.row:after,.clearfix:after{clear:both;}
+.row,.clearfix{zoom:1;}
+
 /* =Gridiculous
 -------------------------------------------------------------- */
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
 body {	
 	font-size: 100%;
  	line-height: 1.6875;
  	}
 
 .grid {
-	padding-left: 20px;
-	padding-right: 20px;
 	margin: 0 auto;
-	max-width: 1240px;
+	max-width: 1200px;
+	width: 100%;
 	}
 
 img {
@@ -89,85 +101,70 @@ img {
 	}
  
 .w320 {
-	max-width: 280px;
+	max-width: 320px;
 	}
 
 .w640 {
-	max-width: 600px;
+	max-width: 640px;
 	}
 
 .w960 {
- 	max-width: 920px;
+ 	max-width: 960px;
  	}
  
 .row {
 	width: 100%;
-	overflow: hidden;
 	margin-bottom: 20px;
 	}
 	
 	.row .row {
-		margin-bottom: 0;
+		width: auto;
+		margin: 0 -20px;
+		}
+		
+.c1 { width: 8.33%; }
+.c2 { width: 16.66%; }
+.c3 { width: 25%; }
+.c4 { width: 33.33%; }
+.c5 { width: 41.66%; }
+.c6 { width: 50%; }
+.c7 { width: 58.33%; }
+.c8 { width: 66.66%; }
+.c9 { width: 75%; }
+.c10 { width: 83.33%; }
+.c11 { width: 91.66%; }
+.c12 { width: 100%; }
+
+	.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
+		min-height: 1px;
+		float: left;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
 		}
 
+.s1 { margin-left: 8.33%; }
+.s2 { margin-left: 16.66%; }
+.s3 { margin-left: 25%; }
+.s4 { margin-left: 33.33%; }
+.s5 { margin-left: 41.66%; }
+.s6 { margin-left: 50%; }
+.s7 { margin-left: 58.33%; }
+.s8 { margin-left: 66.66%; }
+.s9 { margin-left: 75%; }
+.s10 { margin-left: 83.33%; }
+.s11 { margin-left: 91.66%; }
+
 .end {
-	margin-right: 0 !important;
-	}
-		
-.c1 { width: 4.85%; }
-.c2 { width: 13.5%; }
-.c3 { width: 22.1%; }
-.c4 { width: 30.75%; }
-.c5 { width: 39.45%; }
-.c6 { width: 48%; }
-.c7 { width: 56.75%; }
-.c8 { width: 65.4%; }
-.c9 { width: 74.05%; }
-.c10 { width: 82.7%; }
-.c11 { width: 91.35%; }
-.c12 { width: 100%;	float: left; }
-.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11 {
-	min-height: 1px;
-	float: left;
-	margin-right: 3.8%;
+	float: right !important;
 	}
 
-.row .row .c1 { width: 2.85%; }
-.row .row .c2 { width: 11.5%; }
-.row .row .c3 { width: 20.1%; }
-.row .row .c4 { width: 28.75%; }
-.row .row .c5 { width: 37.45%; }
-.row .row .c6 { width: 46%; }
-.row .row .c7 { width: 54.75%; }
-.row .row .c8 { width: 63.4%; }
-.row .row .c9 { width: 72.05%; }
-.row .row .c10 { width: 80.7%; }
-.row .row .c11 { width: 89.35%; }
-.row .row .c1, .row .row .c2, .row .row .c3, .row .row .c4, .row .row .c5, .row .row .c6, .row .row .c7, .row .row .c8, .row .row .c9, .row .row .c10, .row .row .c11, .row .row .c12 {
-	margin-right: 7.8%;
-	}
-	
-.s1 { margin-left: 8.65%; }
-.s2 { margin-left: 17.3%; }
-.s3 { margin-left: 25.9%; }
-.s4 { margin-left: 34.55%; }
-.s5 { margin-left: 43.25%; }
-.s6 { margin-left: 51.8%; }
-.s7 { margin-left: 60.55%; }
-.s8 { margin-left: 69.2%; }
-.s9 { margin-left: 77.85%; }
-.s10 { margin-left: 86.5%; }
-.s11 { margin-left: 95.15%; }
-
-/* =Media query for 960 Screens
+/* =Media query for 960 Screens - sets nested grids to 100%
 -------------------------------------------------------------- */
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 960px) {
 
 	.row .row .c1, .row .row .c2, .row .row .c3, .row .row .c4, .row .row .c5, .row .row .c6, .row .row .c7, .row .row .c8, .row .row .c9, .row .row .c10, .row .row .c11, .row .row .c12 {
 		width: 100%;
-		margin-right: 0;
-		margin-left: 0;
-		margin-bottom: 20px;
 		}		
 
 }
@@ -179,8 +176,8 @@ img {
 	body { font-size: 90%; }
 
 	.row,
-	.row .row > div:last-child{
-		margin-bottom: 0;
+	.row .row > div:last-child {
+		margin-bottom: 0 !important;
 		}
 	
 	.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
