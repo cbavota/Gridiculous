@@ -6,7 +6,7 @@ A fully responsive grid boilerplate that takes you all the way from 1200px on do
 created by c.bavota
 released under GPL v2
 
-May 17th, 2012
+May 18th, 2012
 
 Features
  - Based on a twelve columns grid
@@ -17,6 +17,7 @@ Features
  - Responsive typography
  - Works on desktops, tablets and smart phones
  - Optimized for iPads and iPhones
+ - Minified
  - Includes Normalize.css by Nicolas Gallagher and Jonathan Neal
 
 Known issues
