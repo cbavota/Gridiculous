@@ -165,7 +165,12 @@ img {
 
 	.row .row .c1, .row .row .c2, .row .row .c3, .row .row .c4, .row .row .c5, .row .row .c6, .row .row .c7, .row .row .c8, .row .row .c9, .row .row .c10, .row .row .c11, .row .row .c12 {
 		width: 100%;
+		margin-bottom: 20px;
 		}		
+
+	.row .row > div:last-child {
+		margin-bottom: 0 !important;
+		}
 
 }
 
@@ -175,8 +180,7 @@ img {
 
 	body { font-size: 90%; }
 
-	.row,
-	.row .row > div:last-child {
+	.row {
 		margin-bottom: 0 !important;
 		}
 	
