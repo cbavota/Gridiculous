@@ -4,7 +4,8 @@ Gridiculous
 A fully responsive grid boilerplate that takes you all the way from 1200px on down to 320px.
 
 created by c.bavota
-released under GPL v2
+released under GPL v2 & MIT License (http://en.wikipedia.org/wiki/MIT_License)
+
 
 May 18th, 2012
 
