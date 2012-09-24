@@ -7,7 +7,7 @@ created by c.bavota
 released under GPL v2 & MIT License (http://en.wikipedia.org/wiki/MIT_License)
 
 
-May 18th, 2012
+September 24th, 2012
 
 Features
  - Based on a twelve columns grid
@@ -19,7 +19,4 @@ Features
  - Works on desktops, tablets and smart phones
  - Optimized for iPads and iPhones
  - Minified
- - Includes Normalize.css by Nicolas Gallagher and Jonathan Neal
-
-Known issues
- - not fully tested in IE7 & IE8
+ - Includes Normalize.css v2.0.1 by Nicolas Gallagher and Jonathan Neal
