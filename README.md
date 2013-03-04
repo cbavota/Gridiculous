@@ -6,8 +6,7 @@ A fully responsive grid boilerplate that takes you all the way from 1200px on do
 created by c.bavota
 released under GPL v2 & MIT License (http://en.wikipedia.org/wiki/MIT_License)
 
-
-September 24th, 2012
+March 4th, 2013
 
 Features
  - Based on a twelve columns grid
