@@ -1,0 +1,289 @@
+/* =Font
+-------------------------------------------------------------- */
+@font-face {
+	font-family: 'Russo One';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Russo One'), local('RussoOne-Regular'), url('http://themes.googleusercontent.com/static/fonts/russoone/v1/RO6e96EC9m6OLO0tr7J3z7O3LdcAZYWl9Si6vvxL-qU.woff') format('woff');
+}
+
+/* =General
+-------------------------------------------------------------- */
+body {
+	background: url(../images/tex2res3.png);
+	font-family: Georgia, serif;
+	color: #888;
+	text-shadow: 0 1px 0 #fff;
+	font: 20px/34px normal;
+	}
+
+a {
+	color: #333;
+	}
+
+	a:hover {
+		color: #000;
+		}
+
+h1 {
+	margin-top: 40px;
+	}
+
+	h1,
+	h2 {
+		text-align: center;
+		font-family: Arial;
+		color: #000;
+		}
+
+	.demo h1 {
+		font-size: 30px;
+		}
+
+	.demo h2 {
+		font-size: 22px;
+		}
+
+h3 {
+	font: normal 18px/22px Georgia, serif;
+	}
+
+strong {
+	color: #555;
+	}
+
+p {
+	margin-top: 0;
+	}
+
+/* =Gridiculous fixes
+-------------------------------------------------------------- */
+span.demo {
+	min-height: 60px;
+	background: #ddd;
+	text-align: center;
+	line-height: 60px;
+	color: #999;
+	text-shadow: 0 1px 0 #eee;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	display: block;
+	}
+
+/* =Header
+-------------------------------------------------------------- */
+header.grid {
+	position: relative;
+	}
+
+.bycbavota {
+	background: url(../images/sprite.png) no-repeat 0 -22px;
+	width: 101px;
+	height: 32px;
+	display: block;
+	float: left;
+	position: absolute;
+	left: 440px;
+	top: 48px;
+	}
+
+#site-title {
+	margin: 20px 0 0;
+	font-family: 'Russo One';
+	text-align: center;
+	text-shadow: 2px 2px 0 #ccc;
+	font-size: 60px;
+	}
+
+h2#site-description,
+h3 {
+	text-align: left;
+	margin: 10px 0 40px 10px;
+	font: normal 24px/26px Georgia, serif;
+	text-shadow: 0 1px 0 #fff;
+	color: #888;
+	}
+
+h2.header-title {
+	text-align: left;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	}
+
+/* =Button
+-------------------------------------------------------------- */
+.button {
+	width :100%;
+	font: bold 17px/60px Arial;
+	letter-spacing: 1px;
+	height: 60px;
+	display: inline-block;
+	text-decoration: none;
+	background: #444;
+	border: 1px solid #222;
+	color: #eee;
+	text-transform: uppercase;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 6px 0 10px;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+	transition: background .25s ease-in-out;
+	text-shadow: 1px 1px 1px #000;
+	position: relative;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+	.button:hover {
+		background: #222;
+		color: #eee;
+		}
+
+	.button span {
+		background: url(../images/sprite.png) no-repeat 0 0;
+		display: inline-block;
+		vertical-align: middle;
+		height: 20px;
+		width: 24px;
+		margin: 0 10px 0 0;
+		}
+
+		.button.download span {
+			background-position: -24px 0;
+			width: 22px;
+			position: relative;
+			top: -1px;
+			}
+
+		.button.github span {
+			background-position: -46px 0;
+			width: 23px;
+			}
+
+/* =WordPress
+-------------------------------------------------------------- */
+.wordpress {
+	font-size: 44px;
+	line-height: 44px;
+	text-align: center;
+	margin: 20px 0 10px;
+	font-weight: bold;
+	}
+
+/* =Footer
+-------------------------------------------------------------- */
+footer .row {
+	border-top: 1px solid #ccc;
+	margin: 40px 0 20px;
+	}
+
+footer .c12 {
+	border-top: 1px solid #fff;
+	}
+
+
+footer p {
+	font: 14px/17px normal;
+	text-align: center;
+	margin: 1em 0 0;
+	}
+
+#resize {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 75px;
+	height: 76px;
+	display: block;
+	background: url(../images/sprite.png) no-repeat -0 -57px;
+	}
+
+/* =Google Prettify
+-------------------------------------------------------------- */
+pre {
+	font: 14px/21px normal "myriad-pro-1","myriad-pro-2","Lucida Grande",Sans-Serif;
+	color: #fff;
+	text-shadow: none;
+	padding: 15px;
+	border: 0;
+	border-radius: 8px;
+	position: relative;
+	background: #222;
+	white-space: pre;
+	word-wrap: normal;
+	}
+
+pre[rel]:before {
+	content: attr(rel);
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+	position: absolute;
+	top: -1px;
+	background: #3A87AD;
+	padding: 5px 10px;
+	left: 0;
+	right: 0;
+	font: bold 16px/20px "myriad-pro-1","myriad-pro-2","Lucida Grande",Sans-Serif;
+	color: #fff;
+	-moz-border-radius: 7px 7px 0 0;
+	-webkit-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
+	}
+.kwd{color:#d5883e}.com{color:#797979}.typ{color:#d95b45}.lit{color:#80abc6}.tag{color:#fec974}.atn{color:#D5883E}.dec{color:purple}ol.linenums{margin:0 0 0 30px;color:#ccc;}.linenums li{padding-left:15px;border-left:3px #d9d336 solid;}.linenums .highlight{background-color:#444;text-shadow:1px 1px 0 #000;}.pre-wrap{margin: 0 15px 15px 15px;}.pre-wrap td{background:none !important;border:0;padding:0;}li.l0,li.l1,li.l2,li.l3,li.l4,li.l5,li.l6,li.l7,li.l8,li.l9{color:#555;list-style-type:decimal}li.l1,li.l3,li.l5,li.l7,li.l9{background:#111}.str{color:#b0c975}.atv{color:#b0c975}.pun{color:#F1F2F3}.pln{color:#F1F2F3}pre[rel]{padding-top:45px;}
+@media print{.com{color:#600;font-style:italic}.typ{color:#404;font-weight:700}.lit{color:#044}.pun{color:#440}.pln{color:#000}.atn{color:#404}.str,.atv{color:#060}.kwd,.tag{color:#006;font-weight:700}}
+
+/* =Media query for 1140 Screens
+-------------------------------------------------------------- */
+@media only screen and (max-width: 1023px) {
+	.c3.button-box{width:33.33%}
+	.c9.next-to-button-box{width:66.66%}
+}
+
+/* =Media query for iPad
+-------------------------------------------------------------- */
+@media only screen and (device-width: 768px) {
+	#resize{display:none}
+}
+
+/* =Media query for iPad portrait
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait){
+	.button{width:31%;font-size: 15px;margin: 0 10px 10px 0}
+	.c3.button-box,.c9.next-to-button-box{width:100%}
+	#resize{display:none}
+}
+
+/* =Media query for max-width 680px
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 680px) {
+	.button{width:100%}
+}
+
+/* =Media query for max-width 560px
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 560px) {
+	h2#site-description{margin-bottom:10px}
+	.bycbavota{position:relative;top:0;left:10px;margin-bottom:40px}
+}
+
+/* =Media query for iPhone
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 480px) {
+	h2#site-description{font-size:23px}
+}
+
+/* =Media query for iPhone portrait
+-------------------------------------------------------------- */
+@media handheld, only screen and (max-width: 320px) {
+	h2#site-description{font-size:18px}
+}
